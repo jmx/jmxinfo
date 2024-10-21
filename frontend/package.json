@@ -4,21 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "rsbuild dev --open",
-    "build": "rsbuild build",
-    "lint": "biome check src/",
-    "preview": "rsbuild preview"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18"
+    "preact": "^10.24.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1",
-    "@rsbuild/core": "^1",
-    "@rsbuild/plugin-react": "^1",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "typescript": "^5"
+    "@preact/preset-vite": "^2.9.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
   }
 }
